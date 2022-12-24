@@ -10,11 +10,11 @@ namespace UnaryBase
     public:
         UnaryBase();
         ~UnaryBase();
-        void toUnary(uint8_t *ori, uint8_t *dest, int n);
-        void printBitArray(const uint8_t *T, size_t T_size);
-        bool access(const uint8_t *e, const size_t p);
-        void BitSet(uint8_t *e, const size_t p);
-        void BitClear(uint8_t *e, const size_t p);
+        static void toUnary(uint8_t *ori, uint8_t *dest, int n);
+        static void printBitArray(const uint8_t *T, size_t T_size);
+        static bool access(const uint8_t *e, const size_t p);
+        static void BitSet(uint8_t *e, const size_t p);
+        static void BitClear(uint8_t *e, const size_t p);
     };
 
     void UnaryBase::toUnary(uint8_t *ori, uint8_t *dest, int n)

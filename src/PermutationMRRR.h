@@ -28,7 +28,6 @@ namespace Permutation
 
         int pi_minus_one(int buscar, int pos, bool shortcut = false)
         {
-            cout << "Actual pos: " << pos << endl;
             if (perm[pos - 1] == buscar)
                 return pos;
             if (sampled[pos - 1] == 1 && !shortcut)

@@ -7,10 +7,12 @@
 #Second argument is the name of the executable
 #and the third is the directory where the lib is installed
 
-#compile the program
-
 #if its not provided the directory of the lib use sdsl-lite as default or 
 #or use a environment variable called SDSL_DIR to set the directory of the lib
+
+#If the first argument is -d compile all the programs in the directory
+# all the executable will be has the extension .out 
+# and will be in the bin directory
 
 #create the bin directory in the current directory if it does not exist 
 #remind this script will be in any directory you want to compile the program
@@ -18,10 +20,6 @@
 if [ ! -d "bin" ]; then
     mkdir bin
 fi
-
-#If the first argument is -d compile all the programs in the directory
-# all the executable will be has the extension .out 
-# and will be in the bin directory
 
 if [ "$1" == "-d" ]; then
     for file in *.cpp
